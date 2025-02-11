@@ -1,6 +1,6 @@
 # core
 
-You can use this repository to orchestrate `Unicorn`'s intrusion detection pipeline,
+You can use this repository to orchestrate `Donkey`'s intrusion detection pipeline,
 without setting up each component separately.
 
 Please check the [Wiki](https://github.com/crimson-unicorn/core/wiki) of this repository for detailed documentation.
