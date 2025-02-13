@@ -31,11 +31,16 @@ download_streamspot:
 	$(call dataverse_download,10.7910/DVN/83KYJY/JVJXX5)
 
 run_toy:
-	cd build/parsers && make toy
-	cd build/analyzer && make toy
-	cd build/modeler && make toy
+	cd build/donkey-parsers && make toy
+	cd build/donkey-analyzer && make toy
+	cd build/donkey-modeler && make toy
 
 toy: prepare download_streamspot run_toy
+
+run_complete_evasion_test:
+	cd build/donkey-parsers && make evasion_mimicry
+	cd build/donkey-analyzer && make train_mimicry && make evasion_mimicry && make attack_mimicry && make benign_mimicry
+	cd build/donkey-modeler && make evasion_mimicry && make attack_mimicry && make benign_mimicry
 
 clean:
 	rm -rf build
