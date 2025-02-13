@@ -37,6 +37,11 @@ run_toy:
 
 toy: prepare download_streamspot run_toy
 
+run_complete_evasion_test:
+	cd build/parsers && make evasion_mimicry
+	cd build/analyzer && make train_mimicry && make evasion_mimicry && make attack_mimicry && make benign_mimicry
+	cd build/modeler && make evasion_mimicry && make attack_mimicry && make benign_mimicry
+
 clean:
 	rm -rf build
 	rm -rf data
