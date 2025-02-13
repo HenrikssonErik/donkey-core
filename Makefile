@@ -31,9 +31,9 @@ download_streamspot:
 	$(call dataverse_download,10.7910/DVN/83KYJY/JVJXX5)
 
 run_toy:
-	cd build/parsers && make toy
-	cd build/analyzer && make toy
-	cd build/modeler && make toy
+	cd build/donkey-parsers && make toy
+	cd build/donkey-analyzer && make toy
+	cd build/donkey-modeler && make toy
 
 toy: prepare download_streamspot run_toy
 
