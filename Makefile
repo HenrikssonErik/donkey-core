@@ -9,7 +9,7 @@ prepare_parsers:
 prepare_analyzer:
 	mkdir -p build
 	cd build && git clone --single-branch -b $(analyzer-version) https://github.com/HenrikssonErik/donkey-analyzer.git
-	cd build/analyzer && make sb
+	cd build/donkey-analyzer && make sb
 
 prepare_modeler:
 	mkdir -p build
