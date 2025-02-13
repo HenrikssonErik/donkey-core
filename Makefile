@@ -1,6 +1,6 @@
 parsers-version=master
-analyzer-version=updateMakeFile
-modeler-version=updateMakeFile
+analyzer-version=master
+modeler-version=master
 
 prepare_parsers:
 	mkdir -p build
