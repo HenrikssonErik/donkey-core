@@ -1,6 +1,6 @@
 parsers-version=master
-analyzer-version=master
-modeler-version=master
+analyzer-version=updateMakeFile
+modeler-version=updateMakeFile
 
 prepare_parsers:
 	mkdir -p build
@@ -38,9 +38,9 @@ run_toy:
 toy: prepare download_streamspot run_toy
 
 run_complete_evasion_test:
-	cd build/parsers && make evasion_mimicry
-	cd build/analyzer && make train_mimicry && make evasion_mimicry && make attack_mimicry && make benign_mimicry
-	cd build/modeler && make evasion_mimicry && make attack_mimicry && make benign_mimicry
+	cd build/donkey-parsers && make evasion_mimicry
+	cd build/donkey-analyzer && make train_mimicry && make evasion_mimicry && make attack_mimicry && make benign_mimicry
+	cd build/donkey-modeler && make evasion_mimicry && make attack_mimicry && make benign_mimicry
 
 clean:
 	rm -rf build
