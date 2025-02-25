@@ -32,11 +32,11 @@ download_streamspot:
 
 download_darpa:
 	mkdir -p data
-	mkdir -p data/cadets_e3
+	mkdir -p data/cadets-e3
 	$(call dataverse_download,10.7910/DVN/MPUCQU/BHQBB9) 
 	$(call dataverse_download,10.7910/DVN/MPUCQU/GAMHTP)
-	mv data/attack data/cadets_e3/
-	mv data/benign data/cadets_e3/
+	mv data/attack data/cadets-e3/
+	mv data/benign data/cadets-e3/
 run_toy:
 	cd build/donkey-parsers && make toy
 	cd build/donkey-analyzer && make toy
