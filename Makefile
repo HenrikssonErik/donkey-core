@@ -32,8 +32,8 @@ download_streamspot:
 
 download_darpa:
 	mkdir -p data
-	$(call dataverse_download,10.7910/DVN/MPUCQU#) 
-
+	$(call dataverse_download,10.7910/DVN/MPUCQU/BHQBB9) 
+	$(call dataverse_download,10.7910/DVN/MPUCQU/GAMHTP)
 run_toy:
 	cd build/donkey-parsers && make toy
 	cd build/donkey-analyzer && make toy
