@@ -49,8 +49,8 @@ download_darpa_cadets:
 	$(call dataverse_download,10.7910/DVN/MPUCQU/GAMHTP, data/cadets-e3/)
 
 download_darpa_theia:
-	mkdir -p ../../data/theia-e3/attack/edgelists_attack
-	mkdir -p ../../data/theia-e3/attack/edgelists_benign
+	mkdir -p data/theia-e3/attack/edgelists_attack
+	mkdir -p data/theia-e3/benign/edgelists_benign
 	#Theia CDM Benign Dataset (E3)
 	$(call dataverse_download,10.7910/DVN/QTTIZN/MCNB7N,$(THEIABENIGN))
 	# Edgelist for Theia E3 5m
@@ -61,7 +61,7 @@ download_darpa_theia:
 	$(call dataverse_download,10.7910/DVN/65W3C3/MLXYED,$(THEIAATTACK)) 
 	# Edgelist for Theia Engagaement 3 1r
 	$(call dataverse_download,10.7910/DVN/BXBZSQ/OJSK1R,$(THEIAATTACK))
-	$(call dataverse_download,10.7910/DVN/BXBZSQ/KM0J4X,$(THEIAATTACK))
+	$(call dataverse_download_zip,10.7910/DVN/BXBZSQ/KM0J4X,$(THEIAATTACK))
 	# Edgelist for Theia Engagement 3 6r
 	$(call dataverse_download,10.7910/DVN/KN2RDY/A7FQXI,$(THEIAATTACK))
 
