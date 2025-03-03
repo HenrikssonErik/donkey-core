@@ -56,10 +56,13 @@ download_darpa_theia:
 	# Edgelist for Theia E3 5m
 	$(call dataverse_download_file,10.7910/DVN/L8LROS/EDDKIA,$(THEIAATTACK)/theia-e3-5m.txt)	
 	$(call dataverse_download,10.7910/DVN/L8LROS/EDB6IX,$(THEIAATTACK))
+	# Edgelist for Theia Engagement 3 3
 	$(call dataverse_download_file,10.7910/DVN/65W3C3/TQE9HY,$(THEIAATTACK)/theia-e3-3.txt) 
 	$(call dataverse_download,10.7910/DVN/65W3C3/MLXYED,$(THEIAATTACK)) 
+	# Edgelist for Theia Engagaement 3 1r
 	$(call dataverse_download,10.7910/DVN/BXBZSQ/OJSK1R,$(THEIAATTACK))
 	$(call dataverse_download,10.7910/DVN/BXBZSQ/KM0J4X,$(THEIAATTACK))
+	# Edgelist for Theia Engagement 3 6r
 	$(call dataverse_download,10.7910/DVN/KN2RDY/A7FQXI,$(THEIAATTACK))
 
 run_toy:
