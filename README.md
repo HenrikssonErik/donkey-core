@@ -11,3 +11,7 @@ To clean artifacts from running experiments (including code and data):
 ```
 make clean
 ```
+
+AtlasV2 Dataset:
+The data has been cleaned and only contains the EDR filees for H1
+https://drive.google.com/file/d/1HQSAiOCuwLAqd7I9pa1uRDxwFiymyyar/view?usp=drive_link
